@@ -1,0 +1,246 @@
+
+.section-m1{
+    padding: 100px 18%;
+}
+
+
+
+/* ------------------------------portfolio-home----------------------------------- */
+
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-auto-rows: 100px 220px;
+}
+
+.gallery-items{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-items .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-items .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transition: .4s ease-in-out;
+}
+
+.gallery-items:hover .image img{
+    transform: scale(1.04);
+    filter: blur(2px);
+}
+
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+.w-6{
+    grid-column: span 6;
+}
+.w-7{
+    grid-column: span 7;
+}
+.w-8{
+    grid-column: span 8;
+}
+
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.h-4{
+    grid-row: span 4;
+}
+.h-5{
+    grid-row: span 5;
+}
+.h-6{
+    grid-row: span 6;
+}
+
+
+.layer-1, .layer-2, .layer-3, .layer-4, .project-color {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .20s;
+    cursor: crosshair;
+}
+
+.project-color:hover{
+    background: linear-gradient(135deg, rgba(99, 101, 241, 0.568) 0%, rgba(139, 92, 246, 0.3) 100%);
+}
+
+/* .mandrooal-color:hover{
+    background: #dfa539ef;
+}
+
+.aMirasa-color:hover{
+    background: #009966e3;
+}
+
+.layer-1:hover{
+    background: #0666d3ef;
+}
+
+.layer-2:hover{
+    background: #01040fee;
+}
+
+.layer-3:hover{
+    background: #5e23fff6;
+}  */
+
+
+
+.layer h3{
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .40s;
+    text-align: center;
+}
+
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+
+
+
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+
+
+
+@media (max-width: 1150px){
+    .section-m1{
+        padding: 100px 10%;
+    }
+
+}
+
+@media (max-width: 1060px){
+
+    .w-2{
+        grid-column: span 4;
+    }
+    .w-4{
+        grid-column: span 4;
+    }
+    .w-6{
+        grid-column: span 4;
+    }
+    .h-2{
+        grid-row: span 2;
+    }
+    .h-4{
+        grid-row: span 2;
+    }
+    .h-6{
+        grid-row: span 2;
+    }
+
+    .ending .vous-av .team h2{
+        font-size: 40px;
+    }
+
+    .ending .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ending .footer .descri .col{
+        display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
+
+@media (max-width: 700px){
+    .w-2{
+        grid-column: span 4;
+    }
+    .w-4{
+        grid-column: span 4;
+    }
+    .w-6{
+        grid-column: span 4;
+    }
+    .h-2{
+        grid-row: span 2;
+    }
+    .h-4{
+        grid-row: span 2;
+    }
+    .h-6{
+        grid-row: span 2;
+    }
+
+}
+
+
+@media (max-width: 570px){
+    .container_grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
+/* --------------------------------------------Media-Screen----------------------------------------------------------- */
